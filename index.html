@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+  
+    <div class="container mt-5">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-registration-tab" data-bs-toggle="tab" data-bs-target="#nav-registration" type="button" role="tab" aria-controls="nav-registration" aria-selected="true">Registrasi</button>
+          <button class="nav-link" id="nav-people-tab" data-bs-toggle="tab" data-bs-target="#nav-people" type="button" role="tab" aria-controls="nav-people" aria-selected="false">Pendaftar</button>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active border border-1 border-light-subtle p-3"
+          id="nav-registration"
+          role="tabpanel"
+          aria-labelledby="nav-registration-tab"
+          tabindex="0"
+        >
+          <!-- form -->
+          <main>
+            <form id="registration-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Masukkan nama"
+                  aria-labelledby="nameHelp"
+                >
+                <div id="nameHelp" class="form-text text-danger"></div>
+              </div>
+              <div class="mb-3">
+                <label for="age" class="form-label">Umur</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="age"
+                  name="age"
+                  placeholder="Masukkan umur"
+                  aria-labelledby="ageHelp"
+                >
+                <div id="ageHelp" class="form-text text-danger"></div>
+              </div>
+      
+              <div class="mb-3">
+                <label for="money" class="form-label">Uang Sangu</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="money"
+                  name="money"
+                  placeholder="Masukkan uang sangu"
+                  aria-labelledby="moneyHelp"
+                >
+                <div id="moneyHelp" class="form-text text-danger"></div>
+              </div>
+              <button type="submit" id="btn-submit-registration" class="btn btn-primary">Save</button>
+            </form>
+          </main>
+          <!-- end form -->
+        </div>
+        <div
+          class="tab-pane fade border border-1 border-light-subtle p-3"
+          id="nav-people"
+          role="tabpanel"
+          aria-labelledby="nav-people-tab"
+          tabindex="0"
+        >
+          <!-- table -->
+          <main>
+            <table class="table table-striped" id="table-data">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Umur</th>
+                  <th scope="col">Uang Sangu</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+            <p id="resume-table"></p>
+          </main>
+          <!-- end table -->
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+    <!-- internal js -->
+    <script src="Database.js"></script>
+    <script src="People.js"></script>
+    <script src="registrasi.js"></script>
+    <script src="table.js"></script>
+  </body>
+</html>
